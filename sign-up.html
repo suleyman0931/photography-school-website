@@ -1,0 +1,59 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/css/sign_up.css" />
+    <style>
+     
+    </style>
+    
+  </head>
+  <body style="background-image: url(/image/camera2.jpg);">
+    <div class="container">
+      <h2>Sign Up</h2>
+      <form action="index.html">
+        <label id="a" for="name">Name:</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+         
+          title="name shouldn't be a digit"
+          placeholder="Enter Your Name"
+          required
+        /><br />
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter your Email" required/><br />
+        <label for="password" >Password:</label>
+        <input type="password" name="password" id="password" placeholder="Enter your Password"required/><br />
+        <label for="confirm_password">Confirm Password:</label>
+        <input
+          type="password"
+          name="confirm_password"
+          id="confirm_password"
+          placeholder="Re-enter The Password"
+          required
+        /><br />
+
+        <input type="submit" onclick="u()" value="Sign Up" /><br><br>
+        <a href="login.html">already have account?</a>
+      </form>
+    </div>
+   <!--<script>
+      <button id="showPasswordButton">Show Password</button>
+
+      function u() {
+        var l = document.getElementById("password").value;
+        if (l == "") {
+          alert("password can not be empty");
+          document.getElementById("name").style.backgroundColor = "red";
+          document.getElementById("password").style.backgroundColor = "red";
+        } else alert("password is seeted succesfully");
+      }
+    </script>-->
+  </body>
+</html>
